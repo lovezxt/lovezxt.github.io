@@ -8,6 +8,7 @@
 	background-image: url(../img/background.jpg);
 	background-size: 100% 100%;
 	background-attachment:fixed;
+	font-family: "PingFangSC-Light", "Hiragino Sans GB", "Microsoft YaHei", sans-serif, "黑体";
 }
 #header{
 	width: 100%;
@@ -15,12 +16,16 @@
 	opacity: 50%;
 	position:fixed;
 	top: 0px;
-	z-index: 999;
+	z-index: 50;
 	background-color: rgba(0,0,0,0.3);
 }
 #navigation,#body{
 	width: 1250px;
 	margin: 0 auto;
+}
+#navigation>a{
+	position: relative;
+	top: -50px;
 }
 #navigation>ul{
 	display: inline;
@@ -46,7 +51,6 @@
 }
 #body{
 	margin-top: 50px;
-	height: 1500px;
 	background-color: rgba(0,0,0,0.3);
 }
 .wrap,#dowebok,#dowebokWrap{
@@ -101,10 +105,26 @@
 	background-color: rgba(0,0,0,0.4);
 	border: 0px;
 }
-.body-gzj{
+.happy{
 	width: 100%;
+	color: white;
+	font-size: 16px;
+	padding: 10px 0px;
+	text-align: center;
 }
-#imgs-div{
-	width: 720px;
-	height: 200px;
+#foot{
+	width: 100%;
+	color: white;
+	font-size: 14px;
+	padding: 10px 0px;
+	text-align: center;
+	background-color: rgba(0,0,0,0.3);
+}
+#foot a{
+	color: white;
+	text-decoration: none;
+}
+#foot a:hover{
+	color: black;
+	text-decoration: none;
 }
