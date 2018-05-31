@@ -128,3 +128,34 @@
 	color: black;
 	text-decoration: none;
 }
+.active>a>h3{
+	margin: 5px 0px;
+	position: relative;
+	left: -4em;
+}
+.active>a>h4{
+	margin: 10px 0px;
+}
+.active>a>p{
+	text-indent: 2em;
+}
+.active>a>ul>li{
+	margin: 5px 0px;
+	text-indent: 2em;
+	list-style-type: none;
+}
+#happy-gzj{
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+}
+#happy-gzj>ul>li{
+	width: 100px;
+	height: 100px;
+	display: inline;
+	float: left;
+}
+#happy-gzj>ul>li>img{
+	width: 100px;
+	height: 100px;
+}
