@@ -59,6 +59,3 @@ function goNav4(){
 function goNav5(){
 	$('html,body').animate({scrollTop: $("#nav-5").offset().top},600);
 }
-function info(){
-	alert("没有啦，我才刚毕业！555");
-}
