@@ -19,5 +19,46 @@ $(function() {
 			}
 		}
 	});
+	
 	$(".icon-right-open-big").click();
+	
+	$(".side ul li").hover(function() {
+		$(this).find(".sidebox").stop().animate({
+			"width": "140px"
+		}, 200).css({
+			"opacity": "1",
+			"filter": "Alpha(opacity=100)",
+			"background": "rgba(0,0,0,0.3)"
+		})
+	}, function() {
+		$(this).find(".sidebox").stop().animate({
+			"width": "54px"
+		}, 200).css({
+			"opacity": "0.8",
+			"filter": "Alpha(opacity=80)",
+			"background": "#000"
+		})
+	});
 });
+
+function goTop(){
+	$('html,body').animate({'scrollTop':0},1000);
+}
+function goNav1(){
+	$('html,body').animate({scrollTop: $("#nav-1").offset().top},600);
+}
+function goNav2(){
+	$('html,body').animate({scrollTop: $("#nav-2").offset().top},600);
+}
+function goNav3(){
+	$('html,body').animate({scrollTop: $("#nav-3").offset().top},600);
+}
+function goNav4(){
+	$('html,body').animate({scrollTop: $("#nav-4").offset().top},600);
+}
+function goNav5(){
+	$('html,body').animate({scrollTop: $("#nav-5").offset().top},600);
+}
+function info(){
+	alert("没有啦，我才刚毕业！555");
+}

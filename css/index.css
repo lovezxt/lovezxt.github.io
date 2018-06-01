@@ -145,17 +145,69 @@
 	list-style-type: none;
 }
 #happy-gzj{
-	width: 300px;
-	height: 300px;
-	margin: 0 auto;
+	width: 200px;
+	height: 200px;
+	margin: 10px auto;
 }
-#happy-gzj>ul>li{
-	width: 100px;
-	height: 100px;
-	display: inline;
+#happy-gzj>img{
+	width: 200px;
+	height: 200px;
+	opacity: 0.7;
+}
+.side {
+	position: fixed;
+	width: 54px;
+	height: 275px;
+	right: 0;
+	top: 600px;
+	z-index: 100;
+}
+
+.side ul li {
+	width: 54px;
+	height: 54px;
+	float: left;
+	position: relative;
+	border-bottom: 1px solid #444;
+}
+
+.side ul li .sidebox {
+	position: absolute;
+	width: 54px;
+	height: 54px;
+	top: 0;
+	right: 0;
+	transition: all 0.3s;
+	background: #000;
+	opacity: 0.8;
+	filter: Alpha(opacity=80);
+	color: white;
+	font: 14px/54px "微软雅黑";
+	overflow: hidden;
+}
+
+.side ul li .sidetop {
+	width: 54px;
+	height: 54px;
+	line-height: 54px;
+	display: inline-block;
+	background: #000;
+	opacity: 0.8;
+	filter: Alpha(opacity=80);
+	transition: all 0.3s;
+}
+
+.side ul li .sidetop:hover {
+	background: rgba(0,0,0,0.3);
+	opacity: 1;
+	filter: Alpha(opacity=100);
+}
+
+.side ul li img {
 	float: left;
 }
-#happy-gzj>ul>li>img{
-	width: 100px;
-	height: 100px;
+.img-icon{
+	width: 30px;
+	height: 30px;
+	margin: 12px 10px 0px 12px;
 }
