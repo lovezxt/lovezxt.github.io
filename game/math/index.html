@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/JavaTesk.css"/>
+		<script src="js/javaTesk.js"></script>
+		<script src="js/functionLibrary.js"></script>
+		<title>我的Java作业</title>
+	</head>
+	<body>
+		<div id="bigBox">
+			<div id="firstText">
+				<h1>输出个人信息</h1>
+				<button onclick="personalInformation()">显示个人信息</button>
+				<button onclick="cleanpersonal()">删除个人信息</button>
+				<input type="text" readonly="true" name="personalInforma" id="personalInforma" value="" />
+			</div>
+			<div id="secondText">
+				<h1>三角形的面积</h1>
+				<table>
+					<tr>
+						<td>底(cm):</td>
+						<td><input type="number" name="" id="secondBottom" value="" /></td>
+					</tr>
+					<tr>
+						<td>高(cm):</td>
+						<td><input type="number" name="" id="secondHeight" value="" /></td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<button onclick="calculationSecond()">计算面积</button>
+							<button onclick="cleanSecond()">清除数据</button>
+						</td>
+					</tr>
+					<tr>
+						<td>面积(cm²):</td>
+						<td><input type="text" readonly="true" name="" id="secondSurfaceArea" value="" /></td>
+					</tr>
+				</table>
+			</div>
+			<div id="ThirdText">
+				<h1>圆柱体的表面积和体积</h1>
+				<table>
+					<tr>
+						<td>底面半径(cm):</td>
+						<td><input type="number" name="Thirdbuttom" id="Thirdbuttom" value="" /></td>
+					</tr>
+					<tr>
+						<td>高(cm):</td>
+						<td><input type="number" name="Thirdheight" id="Thirdheight" value="" /></td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<button onclick="calculationThird()">计算面积</button>
+							<button onclick="cleanThird()">清除数据</button>
+						</td>
+					</tr>
+					<tr>
+						<td>表面积(cm²):</td>
+						<td><input type="text" readonly="true" name="ThirdSurfaceArea" id="ThirdSurfaceArea" value="" /></td>
+					</tr>
+					<tr>
+						<td>体积(cm³):</td>
+						<td><input type="text" readonly="true" name="Thirdvolume" id="Thirdvolume" value="" /></td>
+					</tr>
+				</table>
+			</div>
+			<div id="fourthText">
+				<h1>梯形面积</h1>
+				<table>
+					<tr>
+						<td>上底(cm):</td>
+						<td><input type="number" name="" id="topBottom" value="" /></td>
+					</tr>
+					<tr>
+						<td>下底(cm):</td>
+						<td><input type="number" name="" id="bottomBottom" value="" /></td>
+					</tr>
+					<tr>
+						<td>高(cm):</td>
+						<td><input type="number" name="" id="fourthheight" value="" /></td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<button onclick="calculationFourth()">计算面积</button>
+							<button onclick="cleanFourth()">清除数据</button>
+						</td>
+					</tr>
+					<tr>
+						<td>面积(cm²):</td>
+						<td><input type="text" readonly="true" name="" id="fourthSurfaceArea" value="" /></td>
+					</tr>
+				</table>
+			</div>
+			<div id="fifthText">
+				<h1>求余</h1>
+				<table>
+					<tr>
+						<td>总数</td>
+						<td><input type="number" name="" id="FifthTotal" value="" /></td>
+					</tr>
+					<tr>
+						<td>单数</td>
+						<td><input type="number" name="" id="FifthSingular" value="" /></td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<button onclick="calculationFifth()">计算余数</button>
+							<button onclick="cleanFifth()">清除数据</button>
+						</td>
+					</tr>
+					<tr>
+						<td>数量</td>
+						<td><input type="text" readonly="true" name="" id="FifthNumber" value="" /></td>
+					</tr>
+					<tr>
+						<td>余数</td>
+						<td><input type="text" readonly="true" name="" id="FifthRemainder" value="" /></td>
+					</tr>
+				</table>
+			</div>
+			<div id="sixthText">
+				<h1>计算人民币</h1>
+				<table>
+					<tr>
+						<td>总金额(元):</td>
+						<td><input type="number" name="" id="sixthSum" value="" /></td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<button onclick="calculationSixTh()">计算张数</button>
+							<button onclick="cleanSixTh()">清除数据</button>
+						</td>
+						<tr>
+							<td>100元(张):</td>
+							<td><input type="text" readonly="true" name="" id="sixth100" value="" /></td>
+						<tr>
+							<td>50元(张):</td>
+							<td><input type="text" readonly="true" name="" id="sixth50" value="" /></td>
+						</tr>
+						<tr>
+							<td>20元(张):</td>
+							<td><input type="text" readonly="true" name="" id="sixth20" value="" /></td>
+						</tr>
+						<tr>
+							<td>10元(张):</td>
+							<td><input type="text" readonly="true" name="" id="sixth10" value="" /></td>
+						</tr>
+						<tr>
+							<td>5元(张):</td>
+							<td><input type="text" readonly="true" name="" id="sixth5" value="" /></td>
+						</tr>
+						<tr>
+							<td>1元(张):</td>
+							<td><input type="text" readonly="true" name="" id="sixth1" value="" /></td>
+						</tr>
+					</tr>
+				</table>
+			</div>
+			<div id="seventhText">
+				<h1>求差积商</h1>
+				<table>
+					<tr>
+						<td>第一个数:</td>
+						<td><input type="number" name="" id="seventhOneNumber" value="" /></td>
+					</tr>
+					<tr>
+						<td>第二个数:</td>
+						<td><input type="number" name="" id="seventhTwoNumber" value="" /></td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<button onclick="calculationSeventh()">计算结果</button>
+							<button onclick="cleanSeventh()">清除数据</button>
+						</td>
+					</tr>
+					<tr>
+						<td>两数和:</td>
+						<td><input type="text" readonly="true" name="" id="seventh1" value="" /></td>
+					</tr>
+					<tr>
+						<td>两数差:</td>
+							<td><input type="text" readonly="true" name="" id="seventh2" value="" /></td>
+					</tr>
+					<tr>
+						<td>两数积:</td>
+						<td><input type="text" readonly="true" name="" id="seventh3" value="" /></td>
+					</tr>
+					<tr>
+						<td>两数商:</td>
+						<td><input type="text" readonly="true" name="" id="seventh4" value="" /></td>
+					</tr>
+				</table>
+			</div>
+			<div id="eighthText">
+				<h1>华氏度转摄氏度</h1>
+				<table>
+					<tr>
+						<td>华氏温度(f):</td>
+						<td><input type="number" name="" id="eighthFahrenheit"/></td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<button onclick="calculationEighth()">转摄氏度</button>
+							<button onclick="cleanEighth()">清除数据</button>
+						</td>
+					</tr>
+					<tr>
+						<td>摄氏温度(c):</td>
+						<td><input type="text" readonly="true" name="" id="eighthT" value="" /></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>

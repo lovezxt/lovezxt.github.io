@@ -1,0 +1,262 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body>div,#foot,#footNavigation{
+	margin: 0 auto;
+	width: 1090px;
+}
+#bigBox{
+	height: 7px;
+	background-color: #006060;
+}
+#loGo{
+	border-bottom: 1px solid black;
+	height: 150px;
+}
+img[src="img/xijinglogo.png"]{
+	height: 120px;
+	margin-top: 20px;
+}
+img[src="img/propaganda.jpg"]{
+	width: 1090px;
+	height: 500px;
+}
+#clearFloat{
+	clear: both;
+	height: 30px;
+}
+#navigationStudents{
+	list-style-type: none;
+	text-decoration: none;
+	float: right;
+}
+#navigationStudentsFirst,#navigationSchool{
+	color: darkgrey;
+	text-align: right;
+	margin: 20px 0px;
+}
+#navigationStudentsFirst>a{
+	text-decoration: none;
+	color: darkgrey;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+#navigationSchool>a{
+	text-decoration: none;
+	color: red;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+#search{
+	width: 330px;
+	height: 35px;
+	border-radius: 10px;
+	padding-right: 60px;
+	background-color: gainsboro;
+	background-image: url(../img/search.png);
+	background-size: 30px;
+	background-repeat: no-repeat;
+	background-position-x: 340px;
+	background-position-y: 2px;
+	font-size: 15px;
+	color: darkgray;
+}
+#navigation>li,#navigation>li>ul>li{
+	list-style-type: none;
+	float: left;
+	width: 99px;
+	line-height: 50px;
+	height: 50px;
+	text-align: center;
+	cursor: pointer;
+}
+#navigation>li>ul>li{
+	background-color: darkcyan;
+	color: white;
+	font-size: 14px;
+}
+#navigation>li>a,#navigation>li>ul>li>a{
+	font-family: "微软雅黑";
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+#navigation>li>a{
+	color: black;
+}
+#navigation>li>a:hover{
+	color: white;
+}
+#navigation>li:hover,#navigation>li>ul>li:hover{
+	background-color: #006060;
+}
+#navigationDisplay,#navigationDisplay1,#navigationDisplay2,#navigationDisplay3,
+#navigationDisplay4,#navigationDisplay5,#navigationDisplay6,#navigationDisplay7{
+	display: none;
+	position: relative;
+}
+#propaganda{
+	margin-bottom: 20px;
+}
+#bigNews{
+	width: 65%;
+	margin: 5px 25px;
+}
+#bigNews>h1{
+	color: coral;
+	padding: 30px 0px;
+	text-align: center;
+	font-size: 45px;
+}
+#bigNews>h2{
+	margin-top: 15px;
+}
+#bigNews>h4,#NoticeBulletin>h4,#xiJingNews>h4,#department>h4,#academy>h4,#tender>h4,#media>h4{
+	color: #A9A9A9;
+	float: right;
+	font-size: 15px;
+}
+#bigNews>p{
+	text-indent: 30px;
+	line-height: 30px;
+}
+#theHeadlinesNews>div{
+	float: left;
+}
+#bigNewsImg{
+	width: 30%;
+}
+#bigNewsImg>img{
+	width: 100%;
+}
+#xiJingNews{
+	width: 38%;
+	float: left;
+}
+#xiJingNews>div{
+	margin: 4px;
+	float: left;
+}
+.newsDate{
+	width: 25%;
+	float: left;
+	margin-top: 12px;
+}
+.newsDate>ul>li{
+	list-style-type: none;
+	width: 60px;
+	padding: 2px;
+	text-align: center;
+	font-family: "微软雅黑";
+}
+.backg{
+	background-color: #006060;
+}
+.news{
+	width: 75%;
+	float: right;
+}
+.news>h3{
+	margin: 15px 0px;
+	color: #006060;
+}
+.news>p{
+	text-indent: 30px;
+	line-height: 25px;
+}
+#academyNotice{
+	float: right;
+	width: 60%;
+}
+#NoticeBulletin{
+	float: right;
+	width: 100%;
+}
+#NoticeBulletin>div>h3{
+	float: left;
+	margin: 10px 0px;
+}
+#NoticeBulletin>table{
+	width: 100%;
+	background-color: #DCDCDC;
+	color: dimgray;
+}
+#department{
+	margin-top: 20px;
+	width: 49%;
+	float: left;
+}
+#academy{
+	margin-top: 20px;
+	width: 49%;
+	float: right;
+}
+#department>table,#academy>table{
+	width: 100%;
+	color: dimgray;
+}
+#academy>img,#department>img{
+	width: 95%;
+	height: 170px;
+	margin: 10px;
+}
+#tender{
+	float: left;
+	width: 49%;
+}
+#media{
+	float: right;
+	width: 50%;
+}
+#tender>table,#media>table{
+	width: 100%;
+	color: dimgray;
+}
+#tenderMedia>div>hr{
+	height: 2px;
+	margin: 30px 0px;
+}
+#tender>hr{
+	background-color: coral;
+}
+#media>hr{
+	background-color: #006060;
+}
+#footer{
+/*	border: 1px solid red;*/
+	background-color: #CCCCCC;
+	height: 190px;
+	width: 100%;
+}
+#information>p{
+	padding: 3px;
+	color: #696969;
+}
+#information{
+	width: 50%;
+	float: left;
+	margin-top: 20px;
+}
+img[src="img/foot1.jpg"]{
+	padding-top: 20px;
+	float: right;
+}
+#footerNavigation{
+	background-color: #006060;
+	height: 50px;
+	width: 100%;
+	position:fixed;
+	bottom:0;
+}
+#footNavigation>ul>li{
+	float: left;
+	list-style-type: none;
+	margin: 15px 16px;
+	font-family: "微软雅黑";
+	color: white;
+}
+ul>li>a{
+	text-decoration: none;
+	color: white;
+}

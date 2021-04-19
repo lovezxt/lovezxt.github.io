@@ -19,9 +19,9 @@ $(function() {
 			}
 		}
 	});
-	
+
 	$(".icon-right-open-big").click();
-	
+
 	$(".side ul li").hover(function() {
 		$(this).find(".sidebox").stop().animate({
 			"width": "140px"
@@ -56,6 +56,6 @@ function goNav3(){
 function goNav4(){
 	$('html,body').animate({scrollTop: $("#nav-4").offset().top},600);
 }
-function goNav5(){
-	$('html,body').animate({scrollTop: $("#nav-5").offset().top},600);
+function goNav6(){
+	$('html,body').animate({scrollTop: $("#nav-6").offset().top},600);
 }

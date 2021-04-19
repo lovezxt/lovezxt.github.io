@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="../../../img/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="../css/checkerBorad.css"/>
+		<script src ="../js/checkerBorad.js"></script>
+		<script src="../js/functionLibrary.js"></script>
+		<script src="../js/loginAndRegistration.js"></script>
+		<title>注册</title>
+	</head>
+	<body>
+		<font id="pleaseYouLogin">注册:</font>
+		<div id="logo1">
+			<img id="logo1img" src="../img/1775.png"/>
+		</div>
+		<div id="logo2">
+			<img id="logo2img" src="../img/1812.png"/>
+		</div>
+		<table>
+			<tr>
+				<td id="tdFirst">抵制不良游戏，拒绝盗版游戏。 注意自我保护，谨防受骗上当。</td>
+			</tr>
+			<tr>
+				<td id="tdSecond">适度游戏益脑，沉迷游戏伤身。 合理安排时间，享受健康生活。</td>
+			</tr>
+		</table>
+		<form>
+			<input type="text" class="" name="" id="NumberName" maxlength="15" placeholder="8位游戏账号"/>
+			<input type="password" class="" name="" maxlength="15" id="firstNumberPassWord" placeholder="请输入密码"/>
+			<input type="password" class="" name="" maxlength="15" id="secondNumberPassWord" placeholder="确认密码"/>
+			<input type="email" class="" name="" maxlength="31" id="mailBox" placeholder="请输入邮箱"/>
+			<input type="tel" class="" name="" maxlength="11" id="telephone" placeholder="11位手机号"/>
+			<input type="text" class="" name="" readonly="true" id="onVerificationCode" placeholder="验证码"/>
+			<input type="checkbox" name="userProtocel" id="Protocel" checked="true" value="1" />
+			<span id="userNumberOne">已阅读并同意<a href="">《注册协议》</a></span>
+		</form>
+		<input type="button" id="verificationCode" onclick="getVerifyingCode()" value="获取验证码" />
+		<div class="buttonimg1">
+			<img src="../img/buttom1.PNG"/>
+		</div>
+		<div class="buttonimg2">
+			<img src="../img/buttom2.PNG"/>
+		</div>
+		<img src="../img/30.png"/>
+		<input type="button" name="" onclick="window.location.href='../login.html'" id="loginOnI" onclick="" value="我要登录" />
+		<input type="button" name="" id="registerOn" onclick="enroll()" value="立即注册" />
+		<input type="button" name="" id="contactUs" onclick="contactUsGo()" value="联系我们" />
+	</body>
+</html>

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/checkerBorad.css"/>
+		<script src ="js/checkerBorad.js"></script>
+		<script src="js/functionLibrary.js"></script>
+		<script src="js/loginAndRegistration.js"></script>
+		<title>登录</title>
+	</head>
+	<body>
+		<span id="pleaseYouLoginOn">无后台，随意输入:</span>
+		<table>
+			<tr>
+				<td id="tdFirst">抵制不良游戏，拒绝盗版游戏。 注意自我保护，谨防受骗上当。</td>
+			</tr>
+			<tr>
+				<td id="tdSecond">适度游戏益脑，沉迷游戏伤身。 合理安排时间，享受健康生活。</td>
+			</tr>
+		</table>
+		<div id="logo1">
+			<img id="logo1img" src="img/1775.png"/>
+		</div>
+		<div id="logo2">
+			<img id="logo2img" src="img/1812.png"/>
+		</div>
+		<form>
+			<input type="text" name="login" id="loginName" placeholder="账号/手机号/邮箱" autofocus="autofocus"/>
+			<input type="password" name="loginPassword" id="passwordName" placeholder="密码"/>
+			<input type="checkbox" name="rememberNumber" id="rememberNumber" checked="true" value="" /><label for="userProtocel">记住账号</label>
+			<input type="checkbox" name="userProtocel" id="userProtocel" checked="true" value="1" />
+			<span id="userNumber">已阅读并同意<a href="">《登陆协议》</a></span>
+		</form>
+		<div class="buttonimg1">
+			<img src="img/buttom1.PNG"/>
+		</div>
+		<div class="buttonimg2">
+			<img src="img/buttom2.PNG"/>
+		</div>
+		<img src="img/20.png"/>
+		<img class="UserTrueOrFlase" id="loginOnTrue1" src="img/true.png"/>
+		<img class="UserTrueOrFlase" id="loginOnFlase1" src="img/flase.png"/>
+		<img class="UserPasswordTrueOrFlase" id="loginOnTrue2" src="img/true.png"/>
+		<img class="UserPasswordTrueOrFlase" id="loginOnFlase2" src="img/flase.png"/>
+		<input type="button" name="" id="loginOn" onclick="signIn()" value="立即登录" />
+		<input type="button" name="" onclick="window.location.href='subweb/register.html'" id="registerOnI" onclick="" value="我要注册" />
+		<input type="button" name="" id="contactUs" onclick="contactUsGo()" value="联系我们" />
+	</body>
+</html>

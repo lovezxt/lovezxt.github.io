@@ -110,8 +110,12 @@
 	color: white;
 	top: 40px;
 	left: 130px;
-	font-family: "宋体";
 	font-weight: bold;
+}
+.nav-h3{
+	font-weight: bold;
+	font-size: 20px;
+	font-family: "宋体", serif;
 }
 .happy{
 	width: 100%;
@@ -222,4 +226,20 @@
 .nav-img{
 	width: 300px;
 	opacity: 0.8;
+}
+.title{
+	color: white;
+	line-height: 500px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}
+.chartreuse{
+	color: chartreuse;
+}
+.ml80{
+	margin-left: 80px !important;
+}
+.ml20{
+	margin-left: 20px !important;
 }

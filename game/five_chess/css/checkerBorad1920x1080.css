@@ -1,0 +1,460 @@
+/*body背景色*/
+body{
+	background-image: url(../img/2.jpg);
+	overflow: hidden;
+}
+/*大div*/
+#checkerBoradBigBox{
+	width: 900px;
+	height: 900px;
+	margin-left:730px;
+/*	border: black solid 1px;*/
+	background-image: url(../img/checkerBorad.jpg);
+	background-size: 900px 900px;
+}
+/*棋子的div的div框*/
+#divChessBoard{
+	width: 900px;
+	height: 900px;
+	padding-left: 16px;
+	padding-top: 16px;
+/*	border: red solid 1px;*/
+}
+/*棋子的div*/
+#divChessBoard > div{
+	width: 45.8px;
+	height: 45.8px;
+	float: left;
+	font-size: 5px;
+	cursor: auto;
+	/*border-top: red solid 1px;
+	border-left: red solid 1px;*/
+}
+/*棋子*/
+#divChessBoard>div>div{
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	margin-left: 7.5px;
+	margin-top: 7.5px;
+	border-radius: 15px;
+}
+/*棋子颜色*/
+#divChessBoard > div > .black{
+	background-image: url(../img/black.png)
+}
+/*棋子颜色*/
+#divChessBoard> div > .white{
+	background-image: url(../img/white.png)
+}
+/*所有按键样式*/
+input[type=button]{
+	width: 180px;
+	height:60px;
+	font-size: 30px;
+	font-family: 隶书;
+	cursor: pointer;
+	margin: 10px;
+	border-radius: 10px;
+	background-image: url(../img/3.jpg);
+}
+/*菜单按键的翻转*/
+input[type=button]:hover{
+	font-size: 40px;
+	border: maroon 3px solid;
+}
+/*菜单按键的div*/
+#showButton{
+	width: 200px;
+	position: absolute;
+	top: 80px;
+	left: 150px;
+	/*border: red solid 2px;*/
+	margin-top: 200px;
+}
+/*开局单多人按键的div*/
+#startSelectingButton{
+	width: 200px;
+	position: absolute;
+	top: 240px;
+	left: 340px;
+	display: none;
+	/*border: red solid 2px;*/
+}
+/*三局两胜五局三胜按键div*/
+#mangPeopleChooseButton{
+	width: 200px;
+	position: absolute;
+	top: 280px;
+	left: 530px;
+	display: none;
+	/*border: red solid 2px;*/
+}
+/*五子棋img*/
+img[src="img/1775.png"]{
+	width: 500px;
+}
+/*中华上下五千年img*/
+img[src="img/1812.png"]{
+	width: 500px;
+}
+/*图片五子棋*/
+#logo1{
+	float: left;
+}
+/*图片中华上下五千年*/
+#logo2{
+	position: absolute;
+	top: 120px;
+	left: 170px;
+}
+/*记录胜局div*/
+#energyBar{
+	width: 360px;
+	height: 500px;
+	position: absolute;
+	top: 280px;
+	left: 450px;
+	display: none;
+	/*border: red solid 2px;*/
+}
+/*包罗万象天地里img*/
+.buttonimg1{
+	width: 500px;
+	height: 120px;
+	position: absolute;
+	top: 770px;
+}
+/*弹指千年空格间img*/
+.buttonimg2{
+	width: 500px;
+	height: 120px;
+	position: absolute;
+	top: 840px;
+	left: 200px;
+}
+/*退出游戏按键*/
+#contactUs{
+	position: absolute;
+	top: 850px;
+	left: 1680px;
+}
+/*关闭动画按键*/
+#animation{
+	position: absolute;
+	top: 780px;
+	left: 1680px;
+}
+/*记录胜局中标题div*/
+.energyBarTltle{
+	width: 150px;
+	height: 40px;
+	font-size: 35px;
+	color: white;
+	text-align: center;
+	font-family: 隶书;
+}
+/*记录胜局中值的div*/
+.energyBarvalue{
+	width: 150px;
+	height: 40px;
+	font-size: 30px;
+	color: bisque;
+	text-align: center;
+	font-family: 隶书;
+}
+/*时间进度条*/
+#pgBar{
+	width: 450px;
+	height: 20px;
+	position: absolute;
+	top: 510px;
+	left: 430px;
+	border: black solid 2px;
+	border-radius: 10px;
+	display: none;
+	transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	filter:progid:DXImageTransform.Microsoft.BasicImage(Rotation=2);
+}
+/*下一局按键*/
+#nextGameButton{
+	position: absolute;
+	top: 764px;
+	left: 1400px;
+	display: none;
+}
+/*右侧告示div*/
+#judjeVictoryFirst{
+	width: 100px;
+	height: 600px;
+	position: absolute;
+	top: 00px;
+	left: 1800px;
+	color: white;
+	font-size: 75px;
+	font-family: 楷体,微软雅黑;
+}
+#judjeVictorySecond{
+	width: 100px;
+	height: 600px;
+	position: absolute;
+	top: 230px;
+	left: 1700px;
+	color: white;
+	font-size: 75px;
+	font-family: 楷体,微软雅黑;
+}
+/*滚动条告示*/
+marquee{
+	direction:right;
+	color: white;
+	position: absolute;
+	top: 260px;
+	left: 90px;
+	width: 580px;
+	background-color: black;
+}
+/*登录用户名文本框*/
+#loginName{
+	font-size: 20px;
+	border: white 3px solid;
+	width: 400px;
+	height: 50px;
+	position: absolute;
+	top: 350px;
+	left: 800px;
+	border-radius:25px 0 25px 0;
+}
+/*登录密码文本框*/
+#passwordName{
+	font-size: 20px;
+	border: white 3px solid;
+	width: 400px;
+	height: 50px;
+	position: absolute;
+	top: 430px;
+	left: 800px;
+	border-radius:25px 0 25px 0;
+}
+#passwordName:hover,#loginName:hover,#NumberName:hover,#telephone:hover,
+#firstNumberPassWord:hover,#secondNumberPassWord:hover,#mailBox:hover,
+#onVerificationCode:hover
+{
+	width: 410px;
+	height: 55px;
+	border: maroon 3px solid;
+}
+/*我要注册按键*/
+#registerOnI{
+	position: absolute;
+	top: 600px;
+	left: 800px;
+}
+/*登录按键*/
+#loginOn{
+	position: absolute;
+	top: 600px;
+	left: 1000px;
+}
+/*注册按键*/
+#registerOn{
+	position: absolute;
+	top: 750px;
+	left: 1300px;
+}
+/*我要登录按键*/
+#loginOnI{
+	position: absolute;
+	top: 750px;
+	left: 1100px;
+}
+/*记住账号复选按钮*/
+#rememberNumber{
+	position: absolute;
+	top: 280px;
+	left: 450px;
+	zoom: 180%;
+}
+/*已阅读并同意登陆复选按钮*/
+#userProtocel{
+	position: absolute;
+	top: 305px;
+	left: 450px;
+	zoom: 180%;
+}
+/*已阅读并同意注册复选按钮*/
+#Protocel{
+	position: absolute;
+	top: 395px;
+	left: 615px;
+	zoom: 180%;
+}
+/*记住账号字体*/
+label[for="userProtocel"]{
+	color: white;
+	position: absolute;
+	top: 506px;
+	left: 850px;
+	font-size: 25px;
+	font-family: 隶书;
+}
+/*已阅读并同意登陆字体*/
+#userNumber{
+	color: white;
+	position: absolute;
+	top: 550px;
+	left: 850px;
+	font-size: 25px;
+	font-family: 隶书;
+}
+/*已阅读并同意注册字体*/
+#userNumberOne{
+	color: white;
+	position: absolute;
+	top: 715px;
+	left: 1150px;
+	font-size: 25px;
+	font-family: 隶书;
+}
+/*请您登陆文字*/
+#pleaseYouLoginOn{
+	color: white;
+	position: absolute;
+	top: 270px;
+	left: 790px;
+	font-size: 50px;
+	font-family: 王羲之书法字体;
+}
+/*请您注册文字*/
+#pleaseYouLogin{
+	color: white;
+	position: absolute;
+	top: 150px;
+	left: 1090px;
+	font-size: 50px;
+	font-family: 王羲之书法字体;
+}
+/*注册用户名文本框*/
+#NumberName{
+	font-size: 20px;
+	border: white 3px solid;
+	width: 400px;
+	height: 50px;
+	position: absolute;
+	top: 230px;
+	left: 1100px;
+	border-radius:25px 0 25px 0;
+}
+/*注册密码文本框*/
+#firstNumberPassWord{
+	font-size: 20px;
+	border: white 3px solid;
+	width: 400px;
+	height: 50px;
+	position: absolute;
+	top: 310px;
+	left: 1100px;
+	border-radius:25px 0 25px 0;
+}
+/*注册确认密码文本框*/
+#secondNumberPassWord{
+	font-size: 20px;
+	border: white 3px solid;
+	width: 400px;
+	height: 50px;
+	position: absolute;
+	top: 390px;
+	left: 1100px;
+	border-radius:25px 0 25px 0;
+}
+/*注册邮箱文本框*/
+#mailBox{
+	font-size: 20px;
+	border: white 3px solid;
+	width: 400px;
+	height: 50px;
+	position: absolute;
+	top: 470px;
+	left: 1100px;
+	border-radius:25px 0 25px 0;
+}
+/*注册手机号文本框*/
+#telephone{
+	font-size: 20px;
+	border: white 3px solid;
+	width: 400px;
+	height: 50px;
+	position: absolute;
+	top: 550px;
+	left: 1100px;
+	border-radius:25px 0 25px 0;
+}
+/*获取验证码按键*/
+#verificationCode{
+	font-size: 25px;
+	width: 150px;
+	height: 60px;
+	position: absolute;
+	top: 540px;
+	left: 1350px;
+	border-radius:25px 0 25px 0;
+}
+/*输入验证码文本框*/
+#onVerificationCode{
+	font-size: 20px;
+	border: white 3px solid;
+	width: 400px;
+	height: 50px;
+	position: absolute;
+	top: 630px;
+	left: 1100px;
+	border-radius:25px 0 25px 0;
+}
+/*登录页背景图片格式*/
+img[src="img/20.png"]{
+	width: 1950px;
+	margin-left: -30px;
+	margin-top: -50px;
+}
+/*注册页背景图片格式*/
+img[src="../img/30.png"]{
+	width: 500px;
+	margin-top: 270px;
+	margin-left: -100px;
+}
+/*抵制不良游戏，拒绝盗版游戏。 注意自我保护，谨防受骗上当。*/
+#tdFirst{
+	font-family: 隶书;
+	color: white;
+	font-size: 30px;
+	position: absolute;
+	left: 1050px;
+}
+/*适度游戏益脑，沉迷游戏伤身。 合理安排时间，享受健康生活。*/
+#tdSecond{
+	font-family: 隶书;
+	color: white;
+	font-size: 30px;
+	position: absolute;
+	top: 40px;
+	left: 1050px;
+}
+/*登录名对错图片*/
+.UserTrueOrFlase{
+	width: 50px;
+	position: absolute;
+	top: 345px;
+	left: 1220px;
+	display: none;
+}
+/*登录密码对错图片*/
+.UserPasswordTrueOrFlase{
+	width: 50px;
+	position: absolute;
+	top: 425px;
+	left: 1220px;
+	display: none;
+}

@@ -1,0 +1,25 @@
+#bigDiv{
+	width: 900px;
+	height: 900px;
+	margin: 0 auto;
+	border: 2px solid black;
+}
+/*小div*/
+#bigDiv>div{
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	float: left;
+}
+/*蛇头*/
+#bigDiv>.red{
+	background-color: red;
+}
+/*蛇身*/
+#bigDiv>.saddlebrown{
+	background-color: saddlebrown;
+}
+/*食物*/
+#bigDiv>.green{
+	background-color: green;
+}

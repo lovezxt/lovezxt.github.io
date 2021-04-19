@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="shortcut icon" href="../../../img/favicon.ico" type="image/x-icon" />
+		<script src ="../js/checkerBorad.js"></script>
+		<script src="../js/functionLibrary.js"></script>
+		<title>五子棋</title>
+	</head>
+	<body onload="keystrokeOperation()">
+		<marquee scrollamount="3" scrolldelay="20" loop="-1" id="marqueeGo">尊敬的各位玩家你们好：由于系统原因，强烈介意您使用1920*1080屏幕分辨率并安装王羲之书法字体以获得最佳游戏体验，感谢您的配合。</marquee>
+		<progress max="100" value="0" id="pgBar"></progress>
+		<div id="logo1">
+			<img id="logo1img" src="../img/1775.png"/>
+		</div>
+		<div id="logo2">
+			<img id="logo2img" src="../img/1812.png"/>
+		</div>
+		<div id="showButton">
+			<input onmouseover="openStartSelectingButton()" onmouseleave="closeStartSelectingButton()" type="button" name="" id="startGame" value="开始游戏" />
+			<input onclick="reopenNewGame()" type="button" name="" id="startAgain" value="重新开始" />
+			<input onclick="whiteFallBack()" type="button" name="" id="whiteFall" value="白方悔棋" />
+			<input onclick="blackFallBack()" type="button" name="" id="blackFall" value="黑方悔棋" />
+			<input onclick="gameOver()" type="button" name="" id="overGame" value="结束游戏" />
+			<input onclick="introductionGame()" type="button" name="" id="preservationGame" value="游戏简介" />
+		</div>
+		<div id="startSelectingButton" onmouseover="openButton()" onmouseleave="closeButton()">
+			<input onclick="checkerBoradStart()" type="button" name="" id="" value="人机对战" />
+			<input onmouseover="openmangPeopleChooseButton()" onmouseleave="closemangPeopleChooseButton()" type="button" name="" id="secondGame" value="多人对战" />
+		</div>
+		<div id="mangPeopleChooseButton" onmouseover="openWinButton()" onmouseleave="closeWinButton()">
+			<input onclick="threeTwoWin()" type="button" name="" id="" value="三局两胜" />
+			<input onclick="fiveThreeWin()" type="button" name="" id="" value="五局三胜" />
+		</div>
+		<div id="energyBar">
+			<div class="energyBarTltle">游戏局数</div>
+			<div class="energyBarvalue" id="numberGame">第1局</div>
+			<div class="energyBarTltle">黑方胜局</div>
+			<div class="energyBarvalue" id="blackWinGame">0</div>
+			<div class="energyBarTltle">白方胜局</div>
+			<div class="energyBarvalue" id="whiteWinGame">0</div>
+			<div class="energyBarTltle">落子优先</div>
+			<div class="energyBarvalue" id="firstlazi">白方</div>
+			<div class="energyBarTltle">落子时间</div>
+			<div class="energyBarvalue" id="fiveTimer"></div>
+			<div class="energyBarTltle">本局时间</div>
+			<div class="energyBarvalue" id="timeText">00:00</div>
+		</div>
+		<div class="buttonimg1" id="buttonimgOne">
+			<img src="../img/buttom1.PNG"/>
+		</div>
+		<div class="buttonimg2" id="buttonimgTwo">
+			<img src="../img/buttom2.PNG"/>
+		</div>
+		<div id="checkerBoradBigBox">
+			<div id="divChessBoard">
+
+			</div>
+		</div>
+		<div id="judjeVictoryFirst">
+
+		</div>
+		<div id="judjeVictorySecond">
+
+		</div>
+		<input type="button" name="" id="nextGameButton" onclick="nextGame()" value="下一局" />
+		<input type="button" name="" id="contactUs" onclick="contactUs()" value="退出游戏" />
+		<input type="button" name="" id="animation" onclick="closeAnimation()" value="关闭动画" />
+	</body>
+</html>

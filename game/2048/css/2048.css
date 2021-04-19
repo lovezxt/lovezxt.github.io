@@ -1,0 +1,46 @@
+/*img[src="img/logo.png"]{
+	
+}*/
+#bigDiv{
+	margin: 0 auto;
+	/*float: right;*/
+	border: 2px solid black;
+}
+#bigDiv>div{
+	float: left;
+	text-align: center;
+	font-weight: bold;
+}
+.two{
+	background-color: gainsboro;
+}
+.four{
+	background-color: bisque;
+}
+.eight{
+	background-color: coral;
+}
+.sixTeen{
+	background-color: indianred;
+}
+.thirtyTwo{
+	background-color: forestgreen;
+}
+.sixtyFore{
+	background-color: darkcyan;
+}
+.oneHundredAndTwentyEight{
+	background-color: yellow;
+}
+.twoHundredAndFiftySix{
+	background-color: fuchsia;
+}
+.fiveHundredAndTwelve{
+	background-color: mediumblue;
+}
+.oneThousandAndTwentyFour{
+	background-color: blueviolet;
+}
+.twoThousandAndFortyEight{
+	background-color: red;
+}
