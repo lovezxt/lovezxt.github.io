@@ -1,14 +1,5 @@
-#time {
-	width: 360px;
-	height: 50px;
-	margin-left: 70px;
-	font-weight: normal;
-	font-size: 14px;
+#title {
 	display: inline-block;
-}
-#time canvas:last-child{
-	position: relative;
-	top: -55px;
 }
 .item {
 	padding: 5px 0;
